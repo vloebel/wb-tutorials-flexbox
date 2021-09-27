@@ -32,10 +32,14 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 .container {
   display:flex;
   border:10px solid goldenrod;
-  min-height:100vh;
-  flex-wrap:wrap;
+  height:100vh;
+  /* min-height:100vh; */
+  /* flex-wrap default is "nowrap" */
+  /* flex-wrap:wrap; */
 }
 
+/* If the width is too big (for example,if you've got 10 boxes and 
+ "flex: nowrap") flexbox will evenly distribut the children */
 .box {
   width:33.3333333%;
 }
